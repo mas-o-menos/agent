@@ -1,0 +1,25 @@
+{
+  "name": "mom-agent",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "mom-agent": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mas-o-menos/agent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mas-o-menos/agent/issues"
+  },
+  "homepage": "https://github.com/mas-o-menos/agent#readme",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
+}
