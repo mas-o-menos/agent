@@ -40,7 +40,7 @@ REQUEST({uri: URI, json: DATA, method: 'POST'});
 function safeRead(path) {
     let data;
     try {
-        data = FS.readFileSync(path);
+        data = FS.readFileSync(path).toString();
     } catch (e) {
         console.log('Stats file not found', path);
         data = null;
