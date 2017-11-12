@@ -17,7 +17,7 @@ const BASE = PATH.join(CURRENT, '..', '..', '..', 'stats');
 
 const WEBPACK = PATH.join(BASE, 'webpack.json');
 const LIGHTHOUSE = PATH.join(BASE, 'lighthouse.json');
-const COVERAGE = PATH.join(BASE, 'lcov.info');
+const COVERAGE = PATH.join(BASE, '..', 'coverage', 'lcov.info');
 
 const WEBPACK_DATA = safeRead(WEBPACK);
 const LIGHTHOUSE_DATA = safeRead(LIGHTHOUSE);
