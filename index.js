@@ -9,6 +9,7 @@ const BRANCH = process.env.CIRCLE_BRANCH;
 const SHA1 = process.env.CIRCLE_SHA1;
 const REPO = process.env.CIRCLE_REPOSITORY_URL;
 const USERNAME = process.env.CIRCLE_USERNAME;
+const BUILD_NUMBER = process.env.CIRCLE_BUILD_NUM;
 
 const URI = 'https://mas-o-menos.herokuapp.com/api/stats';
 const CURRENT = process.argv[1];
@@ -21,6 +22,7 @@ const WEBPACK_DATA = JSON.parse(FS.readFileSync(WEBPACK).toString());
 const LIGHTHOUSE_DATA = JSON.parse(FS.readFileSync(LIGHTHOUSE).toString());
 
 const DATA = {
+  buildNumber: BUILD_NUMBER,
   username: USERNAME,
   branch: BRANCH,
   sha1: SHA1,
