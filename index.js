@@ -13,11 +13,11 @@ const BUILD_NUMBER = process.env.CIRCLE_BUILD_NUM;
 
 const URI = 'https://mas-o-menos.herokuapp.com/api/stats';
 const CURRENT = process.argv[1];
-const BASE = PATH.join(CURRENT, '..', '..', '..', 'stats');
+const BASE = PATH.join(CURRENT, '..', '..', '..');
 
-const WEBPACK = PATH.join(BASE, 'webpack.json');
-const LIGHTHOUSE = PATH.join(BASE, 'lighthouse.json');
-const COVERAGE = PATH.join(BASE, '..', 'coverage', 'lcov.info');
+const WEBPACK = PATH.join(BASE, 'stats',  'webpack.json');
+const LIGHTHOUSE = PATH.join(BASE, 'stats', 'lighthouse.json');
+const COVERAGE = PATH.join(BASE, 'coverage', 'lcov.info');
 
 const WEBPACK_DATA = safeRead(WEBPACK);
 const LIGHTHOUSE_DATA = safeRead(LIGHTHOUSE);
